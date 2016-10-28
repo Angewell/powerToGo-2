@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>刚跟偶像拍了张海报，心都开花了</title>
+</head>
+
+<body>
+
+    <div id="container" class="on">
+        <div id="page_1" class="page on">
+            <div class="flash f_1"></div>
+            <div class="flash f_2"></div>
+            <div class="flash f_3"></div>
+            <div class="flash f_4"></div>
+            <div class="flash f_5"></div>
+            <div class="flash f_6"></div>
+            <div class="flash f_7"></div>
+            <div class="flash f_8"></div>
+            <div class="flash f_9">
+                <img src="img/masker22.png" />
+            </div>
+        </div>
+
+        <div id="page_2" class="page">
+            <div class="lazy_tip" id="lazy_tip">
+                <span id="lazy_tip_num">图片载入中…</span>
+            </div>
+            <div class="pic_edit">
+                <div id="clipArea"></div>
+                <div class="page_2_btnWrapper">
+                    <div class="page_2_inputWrap clearfix">
+                        <div class="p_2_inputLabel">
+                            <img src="img/tip_name.png" />
+                        </div>
+                        <div class="inputBox">
+                            <input id="page_2_name" type="text" />
+                        </div>
+                    </div>
+                    <button class="page_2_btn" id="upload2">
+                        <img src="img/btn01.png" />
+                    </button>
+                    <button class="page_2_btn" id="clipBtn">
+                        <img src="img/btn02.png" />
+                    </button>
+                </div>
+                <input type="file" id="file" style="opacity: 0;position: fixed;bottom: -100px">
+               
+                <canvas id="myCanvas" width="500" height="675" class="hide"></canvas>
+            </div>
+            <img src="" fileName="" id="hit" style="display:none;z-index: 9">
+            <div id="cover"></div>
+        </div>
+
+        <div id="page_3" class="page">
+           
+            <img id="p3_card" src="" />
+
+
+            <div style="display: none;">
+                <img id="p3_flower" src="img/flower.png" />
+                <img id="p3_logo" src="img/logo.png" />
+                <img id="p3_text" src="img/text2.png" />
+                <img id="p3_word_dou" class="p3_word" src="img/dou.png"/>
+                <img id="p3_word_di" class="p3_word" src="img/di.png"/>
+                <img id="p3_word_0" class="p3_word" src="img/0.png"/>
+                <img id="p3_word_1" class="p3_word" src="img/1.png"/>
+                <img id="p3_word_2" class="p3_word" src="img/2.png"/>
+                <img id="p3_word_3" class="p3_word" src="img/3.png"/>
+                <img id="p3_word_4" class="p3_word" src="img/4.png"/>
+                <img id="p3_word_5" class="p3_word" src="img/5.png"/>
+                <img id="p3_word_6" class="p3_word" src="img/6.png"/>
+                <img id="p3_word_7" class="p3_word" src="img/7.png"/>
+                <img id="p3_word_8" class="p3_word" src="img/8.png"/>
+                <img id="p3_word_9" class="p3_word" src="img/9.png"/>
+                <img id="p3_word_wei" class="p3_word" src="img/wei.png"/>
+                <img id="p3_word_xing" class="p3_word" src="img/xing.png"/>
+                <img id="p3_word_zhe" class="p3_word" src="img/zhe.png"/>
+            </div>
+
+            <div id="p3_btn_wrap">
+                <div id="p3_btn" class="page_3_tip">
+                    <img src="img/btn11.png" />
+                </div>
+            </div>
+
+            <div id="mask">
+                <img src="img/masker.png" id="masker" />
+            </div>
+
+            <div id="kun_say">
+                <div class="kun_say_inner">
+                    恭喜你成为2016行走的力量<br/>第<span class="xingzhe_num"></span>位行者<br/>陈坤给你发来了私信
+                    <div id="say_btn">
+                        <img src="img/btn33.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="swiperBox">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide_1">
+                    <div class="slide_1_box">感谢<span id="slide_name"></span>成为2016年行走的力量第<span class="xingzhe_num"></span>位接力行者</div>
+                    <img src="img/masker33.png" />
+                </div>
+                <div class="swiper-slide slide_2">
+                    <img src="img/s2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide slide_3"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <div class="flower"></div>
+    <div class="logo"></div>
+    <div class="text"></div>
+
+    
+
+    <!-- 站长统计 -->
+    <div style="display:none;">
+        <script src="http://s4.cnzz.com/z_stat.php?id=1259418152&web_id=1259418152" language="JavaScript"></script>
+    </div>
+
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="js/exif.js"></script>
+    <script type="text/javascript" src="js/sonic.js"></script>
+    <script type="text/javascript" src="js/hammer.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/iscroll-zoom.js"></script>
+    <script type="text/javascript" src="js/jquery.photoClip.js"></script>
+    <script type="text/javascript" src="js/uploadImg.js?v=1"></script>
+</body>
+</html>
